@@ -66,6 +66,10 @@
       <div [ngClass]="{ 'destaque': estaDestacado, 'ativo': estaAtivo }">Olá, mundo!</div>
       ```
 
+  - [x] `Eventos`: Aprender com ativar eventos nos components para disparar algum método. Um evento clássico que utilizamos é o `click`. A sintaxe é `(click)="algumaFuncao()"`. Os métodos ficam na `classe`.
+
+    - `Emitindo Eventos`: Podemos comunicar eventos de um componente filho para o pai. Para isso é preciso usar o `@Output`, que vai fazer a saída do evento do componente filho. Na tag de invocação do componente no template, escolhemos um método para executar quando o evento for emitido. Exemplo: `(emit)="onEmit()"`
+
   - [ ] `Serviços`: Os serviços do Angular são usados para fornecer dados ou funcionalidades em toda a aplicação. Vou estudar como criar e usar serviços em meus projetos.
 
   - [ ] `Roteamento`: O roteamento é importante para navegar entre as páginas de um aplicativo Angular. Vou aprender a configurar o roteamento em um aplicativo Angular.

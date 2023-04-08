@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class BannerComponent {
-  showBanner: boolean = true;
+  toggleBanner: boolean = true;
   name: string = 'Jeferson';
+
+  handleBannerToggle(): void {
+    this.toggleBanner = !this.toggleBanner;
+  }
 }

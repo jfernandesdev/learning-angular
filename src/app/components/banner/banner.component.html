@@ -1,7 +1,7 @@
 <div
   class="banner"
   [ngStyle]="{'background-image': 'url(\'./assets/angular-banner.jpg\')'}"
-  *ngIf="showBanner"
+  *ngIf="toggleBanner; else showBanner"
 >
   <div>
     <span *ngIf="name === 'Jeferson'; else nameNotFound">Boas vindas {{ name }}!</span>
@@ -12,5 +12,13 @@
     <a class="cta" href="#">Saiba mais</a>
   </div>
 
-  <button class="btnClose">x</button>
+  <button class="btnClose" (click)="handleBannerToggle()">x</button>
 </div>
+
+<ng-template #showBanner>
+  <div class="btnShowBanner">
+    <a (click)="handleBannerToggle()">
+      Mostrar banner
+    </a>
+  </div>
+</ng-template>

@@ -54,3 +54,20 @@
     color: var(--red-angular);
   }
 }
+
+.btnShowBanner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  a {
+    background: transparent;
+    border: 0;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--red-angular);
+    }
+  }
+}
