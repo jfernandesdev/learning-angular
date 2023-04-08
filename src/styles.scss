@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background: #d9d9d9;
+  --white: #FFF;
+  --red-angular: #DD0031;
+}
+
+body {
+  background: var(--background);
+}
+
+body, button, input, textarea {
+  font: 400 1rem 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  min-height: calc(100vh - 7rem);
+  padding: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: gray;
+}

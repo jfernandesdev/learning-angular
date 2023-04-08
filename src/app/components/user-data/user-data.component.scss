@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.imageWrapper {
+  border: 2px solid var(--red-angular);
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+
+  img {
+    border-radius: 100%;
+    border: 1px solid #FFF;
+  }
+}
+
+.userInfos {
+  display: flex;
+  flex-direction: column;
+
+  strong {
+    line-height: 1.2rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+    color: gray;
+  }
+}
+

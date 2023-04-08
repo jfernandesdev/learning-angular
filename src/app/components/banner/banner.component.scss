@@ -1,0 +1,50 @@
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6rem;
+  height: 10rem;
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  h2 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+}
+
+.cta {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--red-angular);
+  padding: 10px 30px;
+  border-radius: 25px;
+}
+
+.btnClose {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid var(--white);
+  background: transparent;
+  color: var(--white);
+  transition: all 0.2s;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--white);
+    color: var(--red-angular);
+  }
+}
