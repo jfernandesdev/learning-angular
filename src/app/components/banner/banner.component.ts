@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 
 export class BannerComponent {
   showBanner: boolean = true;
+  name: string = 'Jeferson';
 }

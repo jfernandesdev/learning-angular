@@ -39,6 +39,15 @@
       ```html
       <div *ngIf="mostrarMensagem">Olá, mundo!</div>
       ```
+      Agora com else:
+      ```html
+      <span *ngIf="name === 'Jeferson'; else nameNotFound">O nome é Jeferson</span>
+      <ng-template #nameNotFound>
+        <div>
+          <span>O nome não foi encontrado!</span>
+        </div>
+      </ng-template>
+      ```
 
     - `ngFor`: a diretiva ngFor é usada para criar repetições de elementos com base em uma lista ou matriz de dados. Por exemplo:
       ```html

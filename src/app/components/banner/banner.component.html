@@ -4,6 +4,10 @@
   *ngIf="showBanner"
 >
   <div>
+    <span *ngIf="name === 'Jeferson'; else nameNotFound">Boas vindas {{ name }}!</span>
+    <ng-template #nameNotFound>
+      <span>Olá!</span>
+    </ng-template>
     <h2>Aprenda Angular de forma descomplicada!</h2>
     <a class="cta" href="#">Saiba mais</a>
   </div>
