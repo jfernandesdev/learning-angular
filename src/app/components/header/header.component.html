@@ -6,8 +6,11 @@
       height="60"
     />
     <ul>
-     <li *ngFor="let option of menuOptions" [ngClass]="{'active': option === menuOptions[0]}">
-        {{ option }}</li>
+      <li *ngFor="let option of menuOptions" [ngClass]="{'active': option === menuOptions[0]}">
+        <a routerLink="{{ option.url }}">
+          {{ option.title }}
+        </a>
+      </li>
     </ul>
   </div>
 

@@ -13,6 +13,7 @@ import { PipesComponent } from './components/pipes/pipes.component';
 import { ExponentialPipe } from './pipes/exponential.pipe';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { ListCoursesComponent } from './components/list-courses/list-courses.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ListCoursesComponent } from './components/list-courses/list-courses.com
     PipesComponent,
     ExponentialPipe,
     TwoWayBindingComponent,
-    ListCoursesComponent
+    ListCoursesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

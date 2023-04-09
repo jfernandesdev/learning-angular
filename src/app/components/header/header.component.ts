@@ -8,7 +8,12 @@ import { User } from 'src/app/interfaces/User';
 })
 
 export class HeaderComponent {
-  menuOptions = ["Home", "About", "Products", "Contact"];
+  menuOptions = [
+    {title: "Home", url: "/"},
+    {title: "About", url: 'about'},
+    {title: "Products", url: 'list'},
+    {title: "Contact", url: 'contact'}
+  ];
 
   userData: User = {
     name: "Jeferson Fernandes",

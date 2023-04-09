@@ -1,4 +1,4 @@
-# Estudos de Angular (version 15.2.5)
+# Estudos de Angular
 
 ## Roadmap
 
@@ -82,7 +82,12 @@
     - Importar no componente e iniciar no `constructor`;
     - Depois é possível acessar os métodos dele.
 
-  - [ ] `Roteamento`: O roteamento é importante para navegar entre as páginas de um aplicativo Angular. Vou aprender a configurar o roteamento em um aplicativo Angular.
+  - [x] `Roteamento`: O roteamento é importante para navegar entre as páginas de um aplicativo Angular. Vou aprender a configurar o roteamento em um aplicativo Angular.
+    - Importar os módulos `RouterModule` e `Routes`;
+    - Após a definição estas rotas precisam ser importadas em `app.modules.ts`;
+    - E por fim no `template` principal criamos as rotas;
+    - E substituímos os componentes por `<router-outlet>`
+    - No angular ao invés do `href` na tag de link (a), usa-se o atributo `routerLink`
 
   - [ ] `Formulários`: Vou estudar como criar e validar formulários em um aplicativo Angular, já que eles são usados em quase todos os aplicativos web.
 
