@@ -66,6 +66,11 @@
       <div [ngClass]="{ 'destaque': estaDestacado, 'ativo': estaAtivo }">Olá, mundo!</div>
       ```
 
+    - `ngModel`: a diretiva ngModel é usada para vincular o valor de um elemento de formulário a uma propriedade no componente. Por exemplo:
+      ```html
+      <input type="text" [(ngModel)]="nomeDoUsuario">
+      ```
+
   - [x] `Eventos`: Aprender com ativar eventos nos components para disparar algum método. Um evento clássico que utilizamos é o `click`. A sintaxe é `(click)="algumaFuncao()"`. Os métodos ficam na `classe`.
 
     - `Emitindo Eventos`: Podemos comunicar eventos de um componente filho para o pai. Para isso é preciso usar o `@Output`, que vai fazer a saída do evento do componente filho. Na tag de invocação do componente no template, escolhemos um método para executar quando o evento for emitido. Exemplo: `(emit)="onEmit()"`

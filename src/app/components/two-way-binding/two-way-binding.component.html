@@ -1,0 +1,9 @@
+<hr />
+<p>Two Way data Binding (Ligação de dados bidirecional)</p>
+
+<form>
+  <input  type="text" [(ngModel)]="name" name="name" placeholder="Digite seu nome" />
+  <button type="submit">Enviar</button>
+</form>
+
+<h3 *ngIf="name !== ''">O nome é: {{ name }}</h3>
