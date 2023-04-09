@@ -12,6 +12,7 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ExponentialPipe } from './pipes/exponential.pipe';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { ListCoursesComponent } from './components/list-courses/list-courses.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     ChangeNumberComponent,
     PipesComponent,
     ExponentialPipe,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    ListCoursesComponent
   ],
   imports: [
     BrowserModule,

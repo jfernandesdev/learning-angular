@@ -75,7 +75,12 @@
 
     - `Emitindo Eventos`: Podemos comunicar eventos de um componente filho para o pai. Para isso é preciso usar o `@Output`, que vai fazer a saída do evento do componente filho. Na tag de invocação do componente no template, escolhemos um método para executar quando o evento for emitido. Exemplo: `(emit)="onEmit()"`
 
-  - [ ] `Serviços`: Os serviços do Angular são usados para fornecer dados ou funcionalidades em toda a aplicação. Vou estudar como criar e usar serviços em meus projetos.
+  - [x] `Serviços`: Os serviços do Angular são usados para fornecer dados ou funcionalidades em toda a aplicação. Vou estudar como criar e usar serviços em meus projetos.
+    - O `Service` é outra parte fundamental da arquitetura do Angular;
+    - Geralmente ficam as requisições para as APIs;
+    - Precisamos criar o service com: `ng generate service <nome>`;
+    - Importar no componente e iniciar no `constructor`;
+    - Depois é possível acessar os métodos dele.
 
   - [ ] `Roteamento`: O roteamento é importante para navegar entre as páginas de um aplicativo Angular. Vou aprender a configurar o roteamento em um aplicativo Angular.
 

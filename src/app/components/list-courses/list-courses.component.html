@@ -1,0 +1,15 @@
+<hr />
+<div class="listCourses">
+  <div *ngFor="let course of courses" class="itemCourse">
+    <h3>{{course.title}}</h3>
+    <span class="price">{{ course.price | currency:'BRL':'symbol':'1.2-2' }}</span>
+    <span class="description">{{course.description}}</span>
+
+    <div class="footerCard">
+      <button (click)="removeCourse(course)">
+        <i class="ph ph-trash"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<hr />

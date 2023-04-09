@@ -1,0 +1,39 @@
+.listCourses {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+  > div {
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #f9f9f9;
+  }
+}
+
+.price {
+  font-family: 'Roboto Mono', monospace;
+}
+.description {
+  color: gray;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+
+.footerCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  > button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+    > .ph-trash {
+      color: var(--red-angular);
+    }
+  }
+}
