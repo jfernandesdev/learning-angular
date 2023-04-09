@@ -8,6 +8,8 @@ import { UserDataComponent } from './components/user-data/user-data.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
+import { PipesComponent } from './components/pipes/pipes.component';
+import { ExponentialPipe } from './pipes/exponential.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
     BannerComponent,
     EmitterComponent,
     ChangeNumberComponent,
+    PipesComponent,
+    ExponentialPipe
   ],
   imports: [
     BrowserModule,

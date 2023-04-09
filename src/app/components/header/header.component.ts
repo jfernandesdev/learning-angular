@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from 'src/app/interfaces/User';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   menuOptions = ["Home", "About", "Products", "Contact"];
 
-  userData = {
+  userData: User = {
     name: "Jeferson Fernandes",
     username: "jfernandesdev",
     email: "jfernandes.dev@gmail.com",

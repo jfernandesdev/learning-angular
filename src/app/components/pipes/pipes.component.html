@@ -1,0 +1,33 @@
+<hr />
+<span>Pipe operators date: {{date}}</span>
+<h3>Hoje é {{ date | date: 'dd/MM/yyyy' }}</h3>
+
+<hr />
+
+<span>Pipe operators uppercase: "hello world"</span>
+<h3>{{ "hello world" | uppercase }}</h3>
+
+<hr />
+
+<span>Pipe operators lowercase: "HELLO WORLD"</span>
+<h3>{{ "HELLO WORLD" | lowercase }}</h3>
+
+<hr />
+
+<span>Pipe operators titlecase: "jeferson fernandes"</span>
+<h3>{{ "jeferson fernandes" | titlecase }}</h3>
+
+<hr />
+
+<span>Pipe operators currency: 10</span>
+<h3>{{ 10 | currency:'BRL' }}</h3>
+
+<hr />
+
+<span>Pipe operators percent: 0.10</span>
+<h3>{{ 0.10 | percent }}</h3>
+
+<hr />
+
+<span>Pipe operators personalizado: Exponential: 5^2</span>
+<h3>{{ 5 | exponential: 2 }}</h3>
