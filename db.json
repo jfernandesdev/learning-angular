@@ -1,0 +1,10 @@
+{
+  "courses": [
+    { "id": 1, "title": "Angular", "description": "Eu sou apenas uma descrição", "price": 1200, "availability": true },
+    { "id": 2, "title": "React", "description": "Eu sou outra descrição", "price": 1000, "availability": true },
+    { "id": 3, "title": "Typescript", "description": "Eu também sou uma descrição", "price": 500, "availability": true },
+    { "id": 4, "title": "Metodologias Ágeis", "description": "Eu também sou outra uma descrição", "price": 800, "availability": false },
+    { "id": 5, "title": "Javascript", "description": "Eu também sou uma descrição", "price": 750, "availability": true },
+    { "id": 6, "title": "UI/UX", "description": "Eu também sou outra uma descrição", "price": 2000, "availability": false }
+  ]
+}

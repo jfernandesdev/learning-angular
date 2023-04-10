@@ -10,16 +10,17 @@ import { ListService } from 'src/app/services/list.service';
   styleUrls: ['./list-courses.component.scss']
 })
 export class ListCoursesComponent {
-  courses: Course[] = [
-    { title: 'Angular', description: 'Eu sou apenas uma descrição', price: 1200, availability: true },
-    { title: 'React', description: 'Eu sou outra descrição', price: 1000, availability: true },
-    { title: 'Typescript', description: 'Eu também sou uma descrição', price: 500, availability: true },
-    { title: 'Metodologias Ágeis', description: 'Eu também sou outra uma descrição', price: 800, availability: false },
-  ]
+  courses: Course[] = []
 
-  constructor(private listService: ListService) {}
+  constructor(private listService: ListService) {
+    this.getCourses();
+  }
 
   removeCourse(course: Course) {
     this.courses = this.listService.remove(this.courses, course);
+  }
+
+  getCourses(): void {
+    this.listService.getAll().subscribe((courses) => (this.courses = courses));
   }
 }

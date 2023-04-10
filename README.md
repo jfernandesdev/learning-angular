@@ -89,6 +89,10 @@
     - E substituímos os componentes por `<router-outlet>`
     - No angular ao invés do `href` na tag de link (a), usa-se o atributo `routerLink`
 
+  - [x] `Requisições HTTP`: 
+    - para realizar requisições HTTP em nosso services precisamos importar dois pacotes: `HttpClient` e `HttpHeaders`. 
+    - Por último é necessário inicializar o módulo `HttpClientModule` em app.module.ts
+
   - [ ] `Formulários`: Vou estudar como criar e validar formulários em um aplicativo Angular, já que eles são usados em quase todos os aplicativos web.
 
   - [ ] `Observables`: Para lidar com eventos assíncronos no Angular, vou aprender a trabalhar com observables.
